@@ -1,0 +1,52 @@
+/* CSS Document */
+body {
+  font-size: 1.6em;
+
+}
+main {
+  display: none;
+  z-index: 500;
+}
+main.shown {
+  display: inline;
+}
+img#scroll {
+  z-index: 900;
+  max-height: 100%;
+  max-width: 100%;
+}
+img#seal {
+  z-index: 1000;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 35%;
+  height: auto;
+}
+#backdrop {
+  display: none;
+  position: fixed;
+  z-index: -1;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background-image: url("../images/us-constitution-pics/bg-paper.jpg");
+}
+@keyframes shadow-pulse {
+  50% {
+    box-shadow: 0px 0px 175px darkred, 0px 0px 200px black;
+  }
+}
+div#shadow {
+  z-index: 999;
+  position: absolute;
+  top: 41%;
+  left: 38%;
+  width: 425px;
+  height: 425px;
+  border-radius: 50%;
+}
+div#shadow.pulse {
+  animation: shadow-pulse 1.5s infinite;
+}
